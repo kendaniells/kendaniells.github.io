@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> MakerPrep - Working Notes - March 10</title>
+	<style type="text/css">
+	   .box {
+	   	height: 150px;
+	   	width: 150px;
+	   	background-color: blue;
+	   	position: static;
+	   	top: 200px
+	   	left: 20px;
+
+	   }
+       .orangebox {
+	   	height: 200px;
+	   	width: 200px;
+	   	background-color: orange;
+	   	position: static;
+	   	top: 0px;
+	   	left: 0px;
+
+	   }
+	   .wrapper {
+	   	height: 200px;
+	   	width: 200px;
+	   	border: 2px solid black;
+	   	position: static;
+	   	top: 150px;
+	   	left: 150px;
+	   }
+	   .navigation {
+	   	height: 20px;
+	   	width: 100%;
+	   	background-color: red;
+	   	position: static;
+
+	   }
+	   .supremewrapper {
+	   	height: 400px;
+	   	width: 400px;
+	   	background-color: green;
+	   	border: 2px red dotted;
+	   	position: relative;
+	   	top: 30px;
+	   	left: 30px;
+	   }
+	   .zIndexExample {
+	   	height:150px;
+	   	width: 150px;
+	   	background-color: gray;
+	   	z-index: 0;
+	   	position: absolute;
+	   }
+	   .section {
+	   	height: 70px;
+	   	width: 150px;
+	   	background-color: purple;
+	   	margin: 10px;
+	   	border 2px solid black;
+	   	}
+	   	.puppy {
+	   		height: 100px;
+	   		float: left;
+	   	}
+	</style>
+
+
+</head>
+<body>
+	<!-- Four types of positioning:
+
+	1. Static: every element has by default a positioning value of static
+	2. Relative: similar to static but you can move it; moves relative to where it would have been on the page flow
+	3. Absolute: the position is based on the closest non-static parent element it is part of.  not based on anything else (no other elements affect it).  This non-static parent can be the body.
+	4. Fixed:  "sticky" like a navigation bar 
+
+	Z-index: is the z axis on our xyz coordinate plane.  All elements default to a z-index of 0.  Scale runs from 0 to infinity. NEEDS a position.
+
+    Float:
+      - primarily used for text wrapping not for creating layouts
+
+	-->
+
+   <img class="puppy" src="http://i.imgur.com/nZlaeSH.jpg">
+   <p></p>
+
+   <div class="navigation">
+   	<span>here is my awesome navigation</span>
+   </div>
+
+   <div class="supremewrapper">
+   <div class="other">
+   	   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+   	   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+   	   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+   	   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+   	   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+   	   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+   </div>
+
+   <div class="wrapper">
+   	   <div class="orangebox"></div>
+   	   <div class="box"></div>
+   </div>
+   </div>
+   <div class="zIndexExample"></div>
+
+
+
+</body>
+</html>

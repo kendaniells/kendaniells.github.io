@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+
+	</title>
+
+	<style type="text/css">
+      .education {
+      	border: 2px solid blue;
+      }
+	  .travel {
+		border: 2px solid orange;
+	  }
+	  .books {
+	  	border: 2px solid red;
+	  }
+	 
+	 ol {color: pink;
+	 }
+	 button {
+	 	color:red;
+	 }
+
+	 #special {
+	 	border: 5px dashed red;
+	 }
+
+	</style>
+</head>
+<body>
+	<!-- H1s are the largest headers, H6 are smallest
+	HTML is content, CSS is style
+	CSS
+	key: value
+	background-color: yellow
+	font-weight: bold
+
+	Syntax: in the opening tag, write style="key:value"
+
+	Colors
+	1. The actual color name
+		style="color:red"
+	2. RGB (red green blue) : the numbers go from 0-255
+		style="color: rgb(255, 0, 126)"
+	3. Hexidecimal (red green blue) the digits/letters go from 00 to FF (lowest 0/highest: F)
+		style="color: #OOFFAA"
+
+	Classes:  entered at the top
+	IDs: only difference betweeen Classes and IDs is that IDs only used once (and are therefore more specific)
+
+	Specificity wins, i.e. in line styles will display over cascading style, ids over classes
+
+
+
+	 -->
+	<div>
+        <h1 id="special">About Me Page</h1>
+
+		<!-- Education -->
+		<div class="education">
+			<h2>Education</h2>
+			<ul>
+			  <li>High School</li>
+			  <li>College</li>
+			  <li>Graduate School</li>
+			</ul>
+		</div>
+
+		<!-- Books -->
+		<div class="books">
+			<h2>Books</h2>
+			<p>I like to read.</p>
+			<ol>
+				<li>To Kill a Mockingbird</li>
+				<li>Count of Monte Cristo</li>
+				<li>A Song of Ice and Fire</li>
+			</ol>
+			<button>button</button>
+			<button>button</button>
+			<button>button</button>
+			<button>button</button>
+			<button>button</button>
+			<button>button</button>
+		</div>
+
+		<!-- Travel -->
+		<div class="travel">
+			<h2>Travel</h2>
+			<p>I would like to travel, that woudl be nice</p>
+		</div>
+	</div>
+
+</body>
+</html>

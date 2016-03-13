@@ -1,0 +1,19 @@
+       h1 {
+       	color:gray;
+       	font-weight:bold;
+       }
+
+       body {
+       	background-color: lightblue;
+       }
+
+       .lyft-info img {
+       	width: 240px;
+       }
+       .home-page-jumbotron {
+              background-color: white;
+              position: relative;
+              top: 50px;
+              height:650px;
+              background-image:url("https://premiumcoding.com/wp-content/uploads/2014/02/space-background1.png");
+       }
