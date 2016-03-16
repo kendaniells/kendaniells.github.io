@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascrip Basics</title>
+	<!-- meta data: order of operations -->
+	<!-- bootstrap first -->
+	<!-- jquery here -->
+	
+	<style type="test/css">
+
+	</style>
+
+
+</head>
+<body>
+
+<h3>New Vocabulary</h3>
+<p>Value</p>
+<p>Variable - </p>
+<p>operator</p>
+<p>arrays - </p>
+<p>invokation operator - </p>
+<p>pass by value</p>
+
+
+<p>words to define: DOM</p>
+
+
+
+<script type="text/javascript">
+
+/*
+step 1: the word "var"
+step 2: the name of variable
+step 3: equal sign -> when assigning variable a value
+step 4: the value you are assigning to variable
+step 5: semicolon
+
+types of variables:
+1. numbers
+2. strings: words, phrases, etc. (anything in "")
+3. booleans: true/false
+4. functions: similar to "recipes"
+5. arrays/objects: collections (storage)
+
+typeof - 
+
+*/
+
+// var str = "giraffes are cool";
+// var num = 4;
+// var stringifiedNum = "4"
+// console.log(num, typeof num)
+// console.log(stringifiedNum, typeof stringifiedNum)
+
+//actions with numbers: add, subtract, multiply, divide, modulo
+
+// console.log(4 + 2);
+// console.log(1 - 3);
+// console.log(125 * 3);
+// console.log(76 / 8);
+// console.log(12 % 5);
+
+//functions - the "verbs of programming"
+//1. var keyword
+//2. name of function
+//3. eequal sight (assigning your function to the var)
+//4. the word function
+//5. parentheses (with parameters)
+//6. curly braces (inside is your logic)
+
+var addAndMultiply = function(num1, num2) {
+    //logic in here
+    console.log ((num1 + num2) * 2);
+}
+
+//calling function
+/*
+1. name of function
+2. parentheses (inside put values you want to use)
+3. semicolon
+*/
+
+addAndMultiply(12,17);
+addAndMultiply(3,16)
+
+var originalNum = 12;
+var newNum = 19;
+
+addAndMultiply(originalNum, newNum)
+
+newNum = 109;
+addAndMultiply(originalNum, newNum)
+
+//cases:  camel case - capitalize first letter but not first word
+
+
+
+
+
+
+
+var num = 12;
+var giraffe = "best animal"
+var racoon = "natures bandit"
+
+var animal = "giraffe";
+
+// alert(animal + "s are great!");
+
+var color = prompt("What is your favorite color?");
+
+alert(color);
+</script>
+
+</body>
+</html>
