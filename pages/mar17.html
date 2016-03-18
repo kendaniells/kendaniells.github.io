@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+
+repl.it #2
+
+//block statements
+//keyword - parentheses - curly braces
+
+var num = 0;
+
+while(num > 10){
+    console.log(num);
+    
+    //increment operation
+    num++;
+}
+
+
+var isRunning = true
+
+while(isRunning === true){
+
+var num1 = parseInt(prompt("give me a number"));
+var num2 = parseInt(prompt("give me another number"));
+
+alert("the sum of " + num1 + " and " + num2 + " is " + (num1 + num2) + ".");
+
+isRunning = confirm("do you want to go again?");
+}
+
+
+<script>
+
+var myWins = 0, computerWins = 0;
+
+while(myWins < 3 && computerWins < 3){
+    var userHand = prompt("rock, paper, or scissors?");
+    var computerHand = Math.floor(Math.random() * 3);
+    
+    if(userHand === "rock"){
+        if(computerHand === 0){
+            alert("computer threw rock! it's a tie!");
+        } else if (computerHand === 1){
+            alert("computer threw paper! you lose!");
+            computerWins++;
+        } else {
+            alert("computer threw scissors! you win!");
+            myWins++;
+        }
+    } else if(userHand === "paper"){
+        if(computerHand === 0){
+            alert("computer threw rock! you win!");
+            myWins++;
+        } else if (computerHand === 1){
+            alert("computer threw paper! you tie!");
+        } else {
+            alert("computer threw scissors! you lose!");
+            computerWins++;
+        }
+    } else if(userHand === "scissors"){
+        if(computerHand === 0){
+            alert("computer threw rock! you lose!");
+            computerWins++;
+        } else if (computerHand === 1){
+            alert("computer threw paper! you win!");
+            myWins++;
+        } else {
+            alert("computer threw scissors! it's a tie!");
+        }
+    } else {
+        alert("invalid input");
+    }
+}
+
+if(computerWins >= 3){
+    alert("computer won! you suck!");
+} else if(myWins >= 3){
+    alert("you win! right on!");
+} else {
+    alert("something went wrong");
+}
+
+</script
+
+</body>
+</html>
